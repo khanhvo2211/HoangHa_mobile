@@ -1,0 +1,30 @@
+{
+  "name": "hoanghamobile",
+  "version": "1.0.0",
+  "description": "HoangHaMobile",
+  "main": "/src/index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khanhvo2211/HoangHa_mobile.git"
+  },
+  "keywords": [
+    "HoangHa",
+    "Airpod",
+    "pro",
+    "2"
+  ],
+  "author": "KhanhVo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khanhvo2211/HoangHa_mobile/issues"
+  },
+  "homepage": "https://github.com/khanhvo2211/HoangHa_mobile#readme",
+  "devDependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.20"
+  }
+}
