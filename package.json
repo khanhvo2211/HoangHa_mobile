@@ -4,7 +4,8 @@
   "description": "HoangHaMobile",
   "main": "/src/index.js",
   "scripts": {
-    "start": "nodemon ./src/index.js",
+    "start": "nodemon --inspect ./src/index.js",
+    "watch": "node-sass --watch src/resources/scss/app.scss src/public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,6 +26,13 @@
   "homepage": "https://github.com/khanhvo2211/HoangHa_mobile#readme",
   "devDependencies": {
     "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "mongoose-slug-generator": "^1.0.4",
+    "morgan": "^1.10.0",
+    "node-sass": "^7.0.3",
     "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "mongoose": "^6.6.1"
   }
 }

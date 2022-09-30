@@ -1,0 +1,38 @@
+<div class="container">
+  <h1>Khoá học của tôi</h1>
+
+  <table class="table mt-2 container">
+
+    <thead>
+      <tr>
+        <th scope="col">Thứ tự</th>
+        <th scope="col">Tên</th>
+        <th scope="col">Trình độ</th>
+        <th scope="col">Thời gian tạo</th>
+        <th scope="col"></th>
+
+      </tr>
+    </thead>
+    {{#each course}}
+      <tbody>
+        <tr>
+          <th scope="row">{{sum @index 1}}</th>
+          <td>{{this.name}}</td>
+          <td>{{this.level}}</td>
+          <td>{{this.updatedAt}}</td>
+
+          <td>
+            <a
+              href="/course/{{this._id}}/edit "
+              type=""
+              class="btn btn-light"
+            >Sửa</a>
+            <a href="" type="" class="btn btn-light">Xoá</a>
+
+          </td>
+        </tr>
+
+      </tbody>
+    {{/each}}
+  </table>
+</div>
